@@ -1,0 +1,149 @@
+/* ---------------------
+   Estilos generales
+----------------------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* fondo oscuro */
+    color: #fff;
+  }
+  
+  /* ---------------------
+     Hero Section
+  ----------------------*/
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url("Img/968a68ca5ef38f5f6e6c4b4b8ad62806.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Overlay oscuro */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+  }
+  
+  /* Franjas diagonales verdes */
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(135deg, rgba(118,255,3,0.3) 0% 15%, transparent 15% 100%),
+      linear-gradient(-135deg, rgba(118,255,3,0.3) 0% 15%, transparent 15% 100%);
+    z-index: 2;
+  }
+  
+  /* Contenido del hero */
+  .hero-content {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .subtitle {
+    display: block;
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    color: #bbb;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .hero-content h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #76ff03;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #64dd17;
+  }
+  
+  /* ---------------------
+     Dashboard Section
+  ----------------------*/
+  main#dashboard {
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  section {
+    background: #222; /* gris oscuro para contraste */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    font-size: 1em;
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+  
+  button {
+    background: #76ff03;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #64dd17;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  

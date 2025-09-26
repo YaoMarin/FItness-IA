@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitStream Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main id="dashboard">
+    <header>
+      <h1>FitStream Dashboard</h1>
+      <p id="fecha"></p>
+    </header>
+
+    <section id="rutinas">
+      <h2>Rutina de Entrenamiento</h2>
+      <ul id="lista-rutina"></ul>
+      <button id="agregar-rutina">Agregar ejercicio</button>
+    </section>
+
+    <section id="habitos">
+      <h2>Hábitos diarios</h2>
+      <label><input type="checkbox" /> Dormí 8 horas</label>
+      <label><input type="checkbox" /> Comí saludable</label>
+      <label><input type="checkbox" /> Entrené hoy</label>
+    </section>
+
+    <section id="notas">
+      <h2>Notas rápidas</h2>
+      <textarea placeholder="Escribe tus ideas o ajustes..."></textarea>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
